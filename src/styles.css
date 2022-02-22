@@ -1,0 +1,147 @@
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: gainsboro;
+  background: #191919;
+}
+
+body {
+  margin: 0;
+}
+
+article {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+article > main {
+  width: 46rem;
+  padding: 0 0 0 2rem;
+}
+
+article > aside {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 54rem;
+  height: 100vh;
+  max-height: 680px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+article > aside select {
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  padding: 1rem 1rem 1rem 0;
+  color: #fff;
+  outline: none;
+}
+
+article *[data-gist] {
+  color: #4ad8f1;
+}
+
+.github-gist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.github-gist ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.github-gist ul li {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 0.3rem 0.5rem;
+}
+
+.github-gist > div {
+  height: 100%;
+  overflow-y: scroll;
+  background: #0d1117;
+}
+
+.github-gist > div > pre {
+  margin: 0;
+  display: none;
+}
+
+.github-gist > div > pre code {
+  font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+  font-size: 0.9rem;
+  line-height: 1.75;
+}
+
+.github-gist > div > pre.-active {
+  display: inherit;
+}
+
+.github-gist .hljs {
+  padding: 1rem 0;
+}
+
+.github-gist .hljs-ln td.hljs-ln-numbers {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: right;
+  color: rgba(204, 204, 204, 0.4);
+  vertical-align: top;
+  padding: 0 0.75rem;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background: #0d1117;
+}
+
+.github-gist .hljs-ln tr {
+  position: relative;
+  -webkit-transition: background ease-in 0.5s;
+  transition: background ease-in 0.5s;
+}
+
+.github-gist .hljs-ln tr::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.github-gist .hljs-ln td {
+  -webkit-transition: color ease-in 0.5s;
+  transition: color ease-in 0.5s;
+}
+
+.github-gist .hljs-ln .-active {
+  background: #3e3e0c;
+}
+
+.github-gist .hljs-ln .-active td.hljs-ln-numbers {
+  color: #fff;
+  background: #3e3e0c;
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */

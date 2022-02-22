@@ -1,0 +1,13 @@
+{
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "editor.tabSize": 4,
+    "liveServer.settings.host": "localhost",
+    "liveServer.settings.root": "/src",
+    "liveServer.settings.https": {
+        "enable": true,
+        "cert": "/Volumes/Projects/test-gists/https/localhost.pem",
+        "key": "/Volumes/Projects/test-gists/https/localhost.key",
+        "passphrase": "1234"
+    }
+}

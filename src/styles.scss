@@ -1,0 +1,139 @@
+html {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: "Open Sans", sans-serif;
+	color: rgb(220, 220, 220);
+	background: rgb(25, 25, 25);
+}
+
+body {
+	margin: 0;
+}
+
+article {
+	font-size: 1.1rem;
+	line-height: 1.4;
+
+	> main {
+		width: 46rem;
+		padding: 0 0 0 2rem;
+	}
+
+	> aside {
+		flex: none;
+		position: fixed;
+		top: 50%;
+		right: 0;
+		left: 54rem;
+		height: 100vh;
+		max-height: 680px;
+		transform: translateY(-50%);
+
+		select {
+			font-size: 1.1rem;
+			background: none;
+			border: none;
+			padding: 1rem 1rem 1rem 0;
+			color: #fff;
+			outline: none;
+		}
+	}
+
+	*[data-gist] {
+		color: rgb(74, 216, 241);
+	}
+}
+
+
+
+
+
+.github-gist {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		display: flex;
+
+		li {
+			display: block;
+			flex-grow: 0;
+			padding: 0.3rem 0.5rem;
+
+			&.-active {
+
+			}
+		}
+	}
+
+	> div {
+		height: 100%;
+		overflow-y: scroll;
+		background: #0d1117;
+
+		> pre {
+			margin: 0;
+			display: none;
+
+			code {
+				font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+				font-size: 0.9rem;
+				line-height: 1.75;
+			}
+
+			&.-active {
+				display: inherit;
+			}
+		}
+	}
+
+	.hljs {
+		padding: 1rem 0;
+	}
+
+	.hljs-ln {
+		td {
+			&.hljs-ln-numbers {
+				user-select: none;
+				text-align: right;
+				color: rgba(204, 204, 204, 0.40);
+				vertical-align: top;
+				padding: 0 0.75rem;
+				position: sticky;
+				left: 0;
+				background: #0d1117;
+			}		
+		}
+
+		tr {
+			position: relative;
+			transition: background ease-in 0.5s;
+
+			&::after {
+				content: "";
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+				pointer-events: none;
+			}
+		}
+		td {
+			transition: color ease-in 0.5s;
+		}
+
+		.-active {
+			background: #3e3e0c;
+
+			td.hljs-ln-numbers {
+				color: #fff;
+				background: #3e3e0c;
+				opacity: 1;
+			}
+		}
+	}	
+}
