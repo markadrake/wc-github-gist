@@ -78,6 +78,7 @@ article *[data-gist] {
   height: 100%;
   overflow-y: scroll;
   background: #0d1117;
+  position: relative;
 }
 
 .github-gist > div > pre {
